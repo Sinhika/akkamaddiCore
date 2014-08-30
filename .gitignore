@@ -41,3 +41,4 @@ Icon
 bin/*
 build/*
 libs/*
+*.log

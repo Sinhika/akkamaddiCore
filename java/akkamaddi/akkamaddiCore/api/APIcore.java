@@ -25,7 +25,7 @@ public class APIcore
     // Says where the client and server 'proxy' code is loaded.
     @SidedProxy(clientSide = "akkamaddi.akkamaddiCore.api.ClientProxy", 
     			serverSide = "akkamaddi.akkamaddiCore.api.CommonProxy")
-    CommonProxy proxy;
+    public static CommonProxy proxy;
     
     /**
      * Run before anything else. Read your config, create blocks, items, etc, and 
