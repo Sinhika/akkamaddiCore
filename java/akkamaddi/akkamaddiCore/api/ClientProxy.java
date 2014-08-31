@@ -14,4 +14,4 @@ public class ClientProxy extends CommonProxy
     {
         return RenderingRegistry.addNewArmourRendererPrefix(armor);
     }
-}
+} // end class ClientProxy

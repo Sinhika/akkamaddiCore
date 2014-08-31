@@ -8,7 +8,7 @@ import alexndr.SimpleOres.api.content.SimpleArmor;
 
 abstract public class SimpleArmorWithEffect extends SimpleArmor 
 {
-	public enum ARMOR_TYPE { HELM, CHEST, LEGS, BOOTS };
+	public static enum ARMOR_TYPE { HELM, CHEST, LEGS, BOOTS };
 	
 	// { helm, chest, legs, boots }
 	protected ItemStack[] armor = { null, null, null, null };
@@ -35,15 +35,25 @@ abstract public class SimpleArmorWithEffect extends SimpleArmor
 	 * 
 	 * @param player
 	 */
-	public void getArmorPieces(EntityPlayer player) {
+	public static void getArmorPieces(EntityPlayer player, ItemStack[] ar) 
+	{
+		if (ar == null) {
+			ar = new ItemStack[4];
+		}
 		// search armor list for the different pieces.
 		for (int i = 0; i < 4; i++) {
 			if (player.getCurrentArmor(i) == null) {
 				continue;
 			}
 			ItemArmor armorPiece = (ItemArmor) player.getCurrentArmor(i).getItem();
-			armor[armorPiece.armorType] = player.getCurrentArmor(i);
+			ar[armorPiece.armorType] = player.getCurrentArmor(i);
 		} // end-for
+		
+	} // end static getArmorPieces
+	
+	public void getArmorPieces(EntityPlayer player) 
+	{
+		getArmorPieces(player, this.armor);
 	} // end getArmorPieces()
 
 } // end class SimpleArmorWithEffect
