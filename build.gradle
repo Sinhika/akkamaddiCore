@@ -10,7 +10,7 @@ sourceSets.main {
 
 dependencies {
     // you may put jars on which you depend on in ./libs
-    // that's this jar:
+    // that's these jars:
     // compile files ('../lib/[1.7.2] SimpleOres 2 + Plugins v1.4.2.jar')
 }
 

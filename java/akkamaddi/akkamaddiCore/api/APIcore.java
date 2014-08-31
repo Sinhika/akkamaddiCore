@@ -1,7 +1,7 @@
 package akkamaddi.akkamaddiCore.api;
 
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.HashSet;
+import java.util.Set;
 
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
@@ -20,7 +20,7 @@ public class APIcore
 	@Instance("akkamaddicore")
 	public static APIcore instance;
 	
-	public SortedSet<AkkaJoinWorldHelper> joinWorldModRegistry; // add mods that have equipment for mobs.
+	public Set<AkkaJoinWorldHelper> joinWorldModRegistry; // add mods that have equipment for mobs.
 	
     // Says where the client and server 'proxy' code is loaded.
     @SidedProxy(clientSide = "akkamaddi.akkamaddiCore.api.ClientProxy", 
@@ -34,7 +34,7 @@ public class APIcore
     @EventHandler 
     public void preInit(FMLPreInitializationEvent event)
     {
-    	joinWorldModRegistry = new TreeSet<AkkaJoinWorldHelper>();
+    	joinWorldModRegistry = new HashSet<AkkaJoinWorldHelper>();
     } // end preInit()
     
     /**
@@ -43,7 +43,9 @@ public class APIcore
     @EventHandler
     public void Init(FMLInitializationEvent event)
     {
-        MinecraftForge.EVENT_BUS.register(new HandlerJoinWorld());
+    	if (joinWorldModRegistry.size() > 0) {
+    		MinecraftForge.EVENT_BUS.register(new HandlerJoinWorld());
+    	}
     } // end Init()
     
     /**
