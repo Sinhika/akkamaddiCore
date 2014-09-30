@@ -1,6 +1,1 @@
-/bin
-
-*.log
-*.project
-*.classpath
-*.jar
+bin/*build/*libs/**.log*.jar
