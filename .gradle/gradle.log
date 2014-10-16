@@ -1,9 +1,9 @@
 The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 ****************************
- Powered By MCP:            
- http://mcp.ocean-labs.de/  
- Searge, ProfMobius, Fesh0r,
- R4wk, ZeuX, IngisKahn      
+ Powered By MCP:             
+ http://mcp.ocean-labs.de/   
+ Searge, ProfMobius, Fesh0r, 
+ R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
 :compileApiJava UP-TO-DATE
@@ -14,15 +14,13 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 :processResources UP-TO-DATE
 :classes UP-TO-DATE
 :jar
-:extractUserDev UP-TO-DATE
-:extractNatives UP-TO-DATE
-:getAssetsIndex
-:getAssets
-:makeStart SKIPPED
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
+:extractMcpData UP-TO-DATE
+:getVersionJson
+:extractUserDev UP-TO-DATE
 :genSrgs SKIPPED
 :reobf
 :assemble
@@ -31,22 +29,20 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 :akkamaddiCore:compileApiJava UP-TO-DATE
 :akkamaddiCore:processApiResources UP-TO-DATE
 :akkamaddiCore:apiClasses UP-TO-DATE
-:akkamaddiCore:sourceMainJava
+:akkamaddiCore:sourceMainJava UP-TO-DATE
 :akkamaddiCore:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
 
 :akkamaddiCore:processResources
 :akkamaddiCore:classes
 :akkamaddiCore:jar
-:akkamaddiCore:extractUserDev UP-TO-DATE
-:akkamaddiCore:extractNatives UP-TO-DATE
-:akkamaddiCore:getAssetsIndex
-:akkamaddiCore:getAssets
-:akkamaddiCore:makeStart SKIPPED
 :akkamaddiCore:compileTestJava UP-TO-DATE
 :akkamaddiCore:processTestResources UP-TO-DATE
 :akkamaddiCore:testClasses UP-TO-DATE
 :akkamaddiCore:test UP-TO-DATE
+:akkamaddiCore:extractMcpData
+:akkamaddiCore:getVersionJson
+:akkamaddiCore:extractUserDev UP-TO-DATE
 :akkamaddiCore:genSrgs SKIPPED
 :akkamaddiCore:reobf
 :akkamaddiCore:assemble
@@ -55,4 +51,4 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 
 BUILD SUCCESSFUL
 
-Total time: 49.412 secs
+Total time: 20.431 secs

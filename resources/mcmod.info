@@ -3,7 +3,7 @@
 "modid": "akkamaddicore",
 "name": "akkamaddi's Core API",
 "description": "Required library of common functions for akkamaddi's Additions",
-"version": "1.7.10-1.1.0",
+"version": "1.7.10-1.0.2",
 "credits": "Created by Sinhika, reliant on AleXndrTheGr8st and akkamaddi",
 "logoFile": "",
 "mcversion": "1.7.10",
