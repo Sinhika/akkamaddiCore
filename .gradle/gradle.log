@@ -26,10 +26,32 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 :assemble
 :check UP-TO-DATE
 :build
+:ClassicalAlchemy:compileApiJava UP-TO-DATE
+:ClassicalAlchemy:processApiResources UP-TO-DATE
+:ClassicalAlchemy:apiClasses UP-TO-DATE
+:ClassicalAlchemy:sourceMainJava
+:ClassicalAlchemy:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:ClassicalAlchemy:processResources
+:ClassicalAlchemy:classes
+:ClassicalAlchemy:jar
+:ClassicalAlchemy:compileTestJava UP-TO-DATE
+:ClassicalAlchemy:processTestResources UP-TO-DATE
+:ClassicalAlchemy:testClasses UP-TO-DATE
+:ClassicalAlchemy:test UP-TO-DATE
+:ClassicalAlchemy:extractMcpData UP-TO-DATE
+:ClassicalAlchemy:getVersionJson
+:ClassicalAlchemy:extractUserDev UP-TO-DATE
+:ClassicalAlchemy:genSrgs SKIPPED
+:ClassicalAlchemy:reobf
+:ClassicalAlchemy:assemble
+:ClassicalAlchemy:check UP-TO-DATE
+:ClassicalAlchemy:build
 :akkamaddiCore:compileApiJava UP-TO-DATE
 :akkamaddiCore:processApiResources UP-TO-DATE
 :akkamaddiCore:apiClasses UP-TO-DATE
-:akkamaddiCore:sourceMainJava UP-TO-DATE
+:akkamaddiCore:sourceMainJava
 :akkamaddiCore:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
 
@@ -40,7 +62,7 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 :akkamaddiCore:processTestResources UP-TO-DATE
 :akkamaddiCore:testClasses UP-TO-DATE
 :akkamaddiCore:test UP-TO-DATE
-:akkamaddiCore:extractMcpData
+:akkamaddiCore:extractMcpData UP-TO-DATE
 :akkamaddiCore:getVersionJson
 :akkamaddiCore:extractUserDev UP-TO-DATE
 :akkamaddiCore:genSrgs SKIPPED
@@ -51,4 +73,4 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 
 BUILD SUCCESSFUL
 
-Total time: 20.431 secs
+Total time: 46.207 secs
