@@ -1,4 +1,4 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;

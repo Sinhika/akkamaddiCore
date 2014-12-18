@@ -1,4 +1,4 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 

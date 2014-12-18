@@ -3,7 +3,7 @@
  * Implementation of AkkaWorldGenHelper class.
  * @author Sinhika
  */
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 import java.util.Random;
 

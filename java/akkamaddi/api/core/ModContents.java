@@ -1,4 +1,4 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 import com.google.common.base.Function;
 import com.google.common.base.Functions;

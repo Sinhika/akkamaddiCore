@@ -1,4 +1,4 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -23,8 +23,8 @@ public class APIcore
 	public Set<AkkaJoinWorldHelper> joinWorldModRegistry; // add mods that have equipment for mobs.
 	
     // Says where the client and server 'proxy' code is loaded.
-    @SidedProxy(clientSide = "akkamaddi.akkamaddiCore.api.ClientProxy", 
-    			serverSide = "akkamaddi.akkamaddiCore.api.CommonProxy")
+    @SidedProxy(clientSide = "akkamaddi.api.core.ClientProxy", 
+    			serverSide = "akkamaddi.api.core.CommonProxy")
     public static CommonProxy proxy;
     
     /**

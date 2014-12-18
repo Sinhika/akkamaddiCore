@@ -1,4 +1,4 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 
