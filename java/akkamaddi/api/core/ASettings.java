@@ -2,7 +2,6 @@ package akkamaddi.api.core;
 
 import java.io.File;
 
-import akkamaddi.plugins.simpletungsten.ModInfo;
 import alexndr.api.core.LogHelper;
 import net.minecraftforge.common.config.Configuration;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;

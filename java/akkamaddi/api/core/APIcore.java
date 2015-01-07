@@ -7,7 +7,6 @@ import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -22,11 +21,7 @@ public class APIcore
 	
 	public Set<AkkaJoinWorldHelper> joinWorldModRegistry; // add mods that have equipment for mobs.
 	
-    // Says where the client and server 'proxy' code is loaded.
-    @SidedProxy(clientSide = "akkamaddi.api.core.ClientProxy", 
-    			serverSide = "akkamaddi.api.core.CommonProxy")
-    public static CommonProxy proxy;
-    
+   
     /**
      * Run before anything else. Read your config, create blocks, items, etc, and 
      * register them with the GameRegistry. Register recipes.
