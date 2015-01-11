@@ -47,9 +47,6 @@ public class ASettings
         enableRecycling = config.getBoolean(Configuration.CATEGORY_GENERAL, 
         		"Enable " + contents_blurb + " recycling recipes?", false,
         		"Enables fusion furnace recycling recipes for " + contents_blurb);
-        itemizeMobs = config.getBoolean(Configuration.CATEGORY_GENERAL, 
-        		"Equip mobs with " + contents_blurb + "?", false,
-        		"Equip zombies & skeletons with random gear from this mod (potentially overpowered)?");
 		enableArmorStatModification = config.getBoolean("(Advanced) Enable Armor Stat Modification?", 
 				"Setting Toggles", false, 
 				"Enables configuration of Armor stats. Relaunch game to generate the new settings.");
@@ -101,7 +98,6 @@ public class ASettings
 	public static void customizeToolStats() {}
 	
 	public static boolean enableRecycling;
-	public static boolean itemizeMobs;
 	public static boolean enableHigherDimensionGen;
 	public static boolean enableUpdateChecker;
 	public static boolean enableCustomGeneration;

@@ -3,7 +3,7 @@
 	<classpathentry kind="src" path="java"/>
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ForgeSrc"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SimpleCore"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ForgeSrc"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,8 +1,5 @@
 package akkamaddi.api.core;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -19,29 +16,21 @@ public class APIcore
 	@Instance("akkamaddicore")
 	public static APIcore instance;
 	
-	public Set<AkkaJoinWorldHelper> joinWorldModRegistry; // add mods that have equipment for mobs.
-	
-   
+ 
     /**
      * Run before anything else. Read your config, create blocks, items, etc, and 
      * register them with the GameRegistry. Register recipes.
      */
     @EventHandler 
     public void preInit(FMLPreInitializationEvent event)
-    {
-    	joinWorldModRegistry = new HashSet<AkkaJoinWorldHelper>();
-    } // end preInit()
+    {} // end preInit()
     
     /**
      * Do your mod setup. Build whatever data structures you care about. 
      */
     @EventHandler
     public void Init(FMLInitializationEvent event)
-    {
-    	if (joinWorldModRegistry.size() > 0) {
-    		MinecraftForge.EVENT_BUS.register(new HandlerJoinWorld());
-    	}
-    } // end Init()
+    { } // end Init()
     
     /**
      * Handle interaction with other mods, complete your setup based on this.
