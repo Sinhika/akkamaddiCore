@@ -3,7 +3,7 @@
 	<classpathentry kind="src" path="java"/>
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/SimpleCore"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/ForgeSrc"/>
+	<classpathentry kind="lib" path="C:/Projects/SimpleCore/akkamaddiCore/libs/[1.7.10] SimpleCore API v1.0.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

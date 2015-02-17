@@ -1,4 +1,5 @@
 The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
+The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 ****************************
  Powered By MCP:             
  http://mcp.ocean-labs.de/   
@@ -26,35 +27,33 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 :assemble
 :check UP-TO-DATE
 :build
-:ClassicalAlchemy:compileApiJava UP-TO-DATE
-:ClassicalAlchemy:processApiResources UP-TO-DATE
-:ClassicalAlchemy:apiClasses UP-TO-DATE
-:ClassicalAlchemy:sourceMainJava
-:ClassicalAlchemy:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+:SterlingAndBlack:compileApiJava UP-TO-DATE
+:SterlingAndBlack:processApiResources UP-TO-DATE
+:SterlingAndBlack:apiClasses UP-TO-DATE
+:SterlingAndBlack:sourceMainJava
+:SterlingAndBlack:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
 
-:ClassicalAlchemy:processResources
-:ClassicalAlchemy:classes
-:ClassicalAlchemy:jar
-:ClassicalAlchemy:compileTestJava UP-TO-DATE
-:ClassicalAlchemy:processTestResources UP-TO-DATE
-:ClassicalAlchemy:testClasses UP-TO-DATE
-:ClassicalAlchemy:test UP-TO-DATE
-:ClassicalAlchemy:extractMcpData UP-TO-DATE
-:ClassicalAlchemy:getVersionJson
-:ClassicalAlchemy:extractUserDev UP-TO-DATE
-:ClassicalAlchemy:genSrgs SKIPPED
-:ClassicalAlchemy:reobf
-:ClassicalAlchemy:assemble
-:ClassicalAlchemy:check UP-TO-DATE
-:ClassicalAlchemy:build
+:SterlingAndBlack:processResources
+:SterlingAndBlack:classes
+:SterlingAndBlack:jar
+:SterlingAndBlack:compileTestJava UP-TO-DATE
+:SterlingAndBlack:processTestResources UP-TO-DATE
+:SterlingAndBlack:testClasses UP-TO-DATE
+:SterlingAndBlack:test UP-TO-DATE
+:SterlingAndBlack:extractMcpData UP-TO-DATE
+:SterlingAndBlack:getVersionJson
+:SterlingAndBlack:extractUserDev UP-TO-DATE
+:SterlingAndBlack:genSrgs SKIPPED
+:SterlingAndBlack:reobf
+:SterlingAndBlack:assemble
+:SterlingAndBlack:check UP-TO-DATE
+:SterlingAndBlack:build
 :akkamaddiCore:compileApiJava UP-TO-DATE
 :akkamaddiCore:processApiResources UP-TO-DATE
 :akkamaddiCore:apiClasses UP-TO-DATE
-:akkamaddiCore:sourceMainJava
-:akkamaddiCore:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-1 warning
-
+:akkamaddiCore:sourceMainJava UP-TO-DATE
+:akkamaddiCore:compileJava UP-TO-DATE
 :akkamaddiCore:processResources
 :akkamaddiCore:classes
 :akkamaddiCore:jar
@@ -70,7 +69,29 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 :akkamaddiCore:assemble
 :akkamaddiCore:check UP-TO-DATE
 :akkamaddiCore:build
+:simpletungsten:compileApiJava UP-TO-DATE
+:simpletungsten:processApiResources UP-TO-DATE
+:simpletungsten:apiClasses UP-TO-DATE
+:simpletungsten:sourceMainJava
+:simpletungsten:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:simpletungsten:processResources
+:simpletungsten:classes
+:simpletungsten:jar
+:simpletungsten:compileTestJava UP-TO-DATE
+:simpletungsten:processTestResources UP-TO-DATE
+:simpletungsten:testClasses UP-TO-DATE
+:simpletungsten:test UP-TO-DATE
+:simpletungsten:extractMcpData UP-TO-DATE
+:simpletungsten:getVersionJson
+:simpletungsten:extractUserDev UP-TO-DATE
+:simpletungsten:genSrgs SKIPPED
+:simpletungsten:reobf
+:simpletungsten:assemble
+:simpletungsten:check UP-TO-DATE
+:simpletungsten:build
 
 BUILD SUCCESSFUL
 
-Total time: 46.207 secs
+Total time: 1 mins 41.01 secs

@@ -12,6 +12,6 @@
 "authorList": [ "akkamaddi","Sinhika" ],
 "parent":"",
 "screenshots": [],
-"dependencies": ["simpleores"]
+"dependencies": ["simplecore"]
 }
 ]

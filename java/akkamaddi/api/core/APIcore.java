@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = "akkamaddicore", name = "akkamaddi's Core API", version = "1.7.10-1.0.3", 
-	 dependencies = "required-after:simpleores; after:MoCreatures")
+	 dependencies = "required-after:simplecore; after:MoCreatures")
 
 public class APIcore 
 {

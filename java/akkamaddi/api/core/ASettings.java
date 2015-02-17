@@ -44,8 +44,8 @@ public class ASettings
 		LogHelper.verboseInfo(mod_id, "Loading Generic Settings...");
 		
 		// toggles
-        enableRecycling = config.getBoolean(Configuration.CATEGORY_GENERAL, 
-        		"Enable " + contents_blurb + " recycling recipes?", false,
+        enableRecycling = config.getBoolean("Enable " + contents_blurb + " recycling recipes?", 
+        		Configuration.CATEGORY_GENERAL, false,
         		"Enables fusion furnace recycling recipes for " + contents_blurb);
 		enableArmorStatModification = config.getBoolean("(Advanced) Enable Armor Stat Modification?", 
 				"Setting Toggles", false, 
