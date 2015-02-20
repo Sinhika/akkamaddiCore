@@ -8,7 +8,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = "akkamaddicore", name = "akkamaddi's Core API", version = "1.7.10-1.0.3", 
+@Mod(modid = "akkamaddicore", name = "akkamaddi's Core API", version = "1.7.10-2.0.0", 
 	 dependencies = "required-after:simplecore; after:MoCreatures")
 
 public class APIcore 
