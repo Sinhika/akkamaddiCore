@@ -3,20 +3,16 @@ package akkamaddi.api.core;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = "akkamaddicore", name = "akkamaddi's Core API", version = "1.7.10-2.0.0", 
+@Mod(modid = ModInfo.ID, name = ModInfo.NAME, version = ModInfo.VERSION, 
 	 dependencies = "required-after:simplecore; after:MoCreatures")
 
 public class APIcore 
 {
-	@Instance("akkamaddicore")
-	public static APIcore instance;
-	
- 
+
     /**
      * Run before anything else. Read your config, create blocks, items, etc, and 
      * register them with the GameRegistry. Register recipes.
