@@ -1,4 +1,4 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 public enum EnumMobType {
 	everything, mobs, players

@@ -1,9 +1,7 @@
 bin/
 build/
 libs/
-.gradle/
 *.log
 *.jar
 *.class
-*.log
-*.log
+.gradle/

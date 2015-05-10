@@ -1,4 +1,4 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 import java.util.Random;
 

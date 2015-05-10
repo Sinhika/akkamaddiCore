@@ -1,4 +1,4 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

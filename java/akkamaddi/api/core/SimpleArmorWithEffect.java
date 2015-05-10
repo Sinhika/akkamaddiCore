@@ -1,10 +1,10 @@
-package akkamaddi.akkamaddiCore.api;
+package akkamaddi.api.core;
 
+import alexndr.api.content.items.SimpleArmor;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import alexndr.SimpleOres.api.content.SimpleArmor;
 
 abstract public class SimpleArmorWithEffect extends SimpleArmor 
 {
@@ -13,9 +13,16 @@ abstract public class SimpleArmorWithEffect extends SimpleArmor
 	// { helm, chest, legs, boots }
 	protected ItemStack[] armor = { null, null, null, null };
 
+	public SimpleArmorWithEffect(ArmorMaterial armormaterial, int slotnumber)
+	{
+		super(armormaterial, slotnumber);	
+	}
+	
+	@Deprecated
 	public SimpleArmorWithEffect(ArmorMaterial armormaterial, int renderer,
-			int slotnumber) {
-		super(armormaterial, renderer, slotnumber);
+			int slotnumber) 
+	{
+		super(armormaterial, slotnumber);
 	}
 
 	/**
@@ -46,6 +53,7 @@ abstract public class SimpleArmorWithEffect extends SimpleArmor
 				continue;
 			}
 			ItemArmor armorPiece = (ItemArmor) player.getCurrentArmor(i).getItem();
+			// armorType: 0 is helmet, 1 is plate, 2 is legs and 3 is boots
 			ar[armorPiece.armorType] = player.getCurrentArmor(i);
 		} // end-for
 		
